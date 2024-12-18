@@ -1,4 +1,4 @@
 # My Project
 The Wedding firna & Bimo
 
-![Project Thumbnail](img/prewed.jpg)
+[![Thumbnail](img/prewed.jpg)](https://github.com/dkrii/repo)
