@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="The Wedding Off Firna Dias & Bimo Anggit Saputra">
-    <meta property="og:description" content="The Wedding Off Firna Dias & Bimo Anggit Saputra">
-    <meta property="og:image" content="https://raw.githubusercontent.com/dkrii/WeddingFirna-Bimo/main/img/prewed.jpg">
-    <meta property="og:url" content="https://dkrii.github.io/WeddingFirna-Bimo/">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:title"
+      content="The Wedding Off Firna Dias & Bimo Anggit Saputra"
+    />
+    <meta
+      property="og:description"
+      content="The Wedding Off Firna Dias & Bimo Anggit Saputra"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/dkrii/WeddingFirna-Bimo/main/img/prewed.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://dkrii.github.io/WeddingFirna-Bimo/"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ana & Bimo Wedding</title>
+    <title>Anna & Bimo Wedding</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -40,13 +52,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- HERO -->
     <section
       id="hero"
       class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
     >
       <main>
         <h4>kepada <span>Bapak/Ibu/Saudara/i,</span></h4>
-        <h1>Ana & Bimo</h1>
+        <h1>Anna & Bimo</h1>
         <p>Akan Melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
         <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()"
@@ -54,12 +67,22 @@
         >
       </main>
     </section>
+    <!-- HERO -->
 
     <!-- Navbar start -->
     <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
       <div class="container">
-        <a class="navbar-brand" href="#">Ana & Bimo </a>
         <button
+          class="btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Ana & Bimo </a>
+        <!-- <button
           class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="offcanvas"
@@ -68,8 +91,9 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
+        </button> -->
+
+        <!-- <div
           class="offcanvas offcanvas-end"
           tabindex="-1"
           id="offcanvasNavbar"
@@ -96,6 +120,34 @@
               <a class="nav-link" href="#gifts">Gifts</a>
             </div>
           </div>
+        </div> -->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              Anna & Bimo
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -104,66 +156,70 @@
     <!-- Home -->
     <section id="home" class="home">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <h2>Acara pernikahan</h2>
-            <h3>Diselenggarakan pada 4 Januari 2025 di Sukabumi, Jawa Barat</h3>
-            <p>
-              Oleh karena itu, dengan segala hormat, kami bermaksud untuk
-              mengundang Bapak/Ibu/Saudara/i, untuk hadir pada acara kami.
-            </p>
-          </div>
-        </div>
-
-        <!-- firna dias -->
-        <div class="row couple">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-8 text-end">
-                <h3>Firna Dias</h3>
-                <p>Sukabumi, 18 November 2001</p>
-                <p>
-                  Putri dari Bapak Ujang Suherman <br />
-                  dan <br />
-                  Ibu Heni
-                </p>
-              </div>
-              <div class="col-4">
-                <img
-                  src="img/firna (2).jpg"
-                  alt="Firna Dias"
-                  class="img-responsive rounded-circle"
-                />
-              </div>
+        <div class="scroll-animation">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <h2>Acara pernikahan</h2>
+              <h3>
+                Diselenggarakan pada 4 Januari 2025 di Sukabumi, Jawa Barat
+              </h3>
+              <p>
+                Oleh karena itu, dengan segala hormat, kami bermaksud untuk
+                mengundang Bapak/Ibu/Saudara/i, untuk hadir pada acara kami.
+              </p>
             </div>
           </div>
 
           <!-- firna dias -->
-
-          <!-- icons -->
-          <span class="heart"><i class="bi bi-heart-fill"></i></span>
-          <!-- Icons -->
-
-          <!-- bimo -->
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-4">
-                <img
-                  src="img/bimo.jpg"
-                  alt="Bimo Anggit"
-                  class="img-responsive rounded-circle"
-                />
+          <div class="row couple">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-8 text-end">
+                  <h3>Firna Dias</h3>
+                  <p>Sukabumi, 18 November 2001</p>
+                  <p>
+                    Putri ke 2 dari Bapak Ujang Suherman <br />
+                    dan <br />
+                    Ibu Heni
+                  </p>
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/firna (2).jpg"
+                    alt="Firna Dias"
+                    class="img-responsive rounded-circle"
+                  />
+                </div>
               </div>
-              <div class="col-8">
-                <h3>Bimo Anngit Saputra</h3>
-                <p>Jawa Tengah</p>
-                <p>
-                  Putra dari Bapak Ardiyono <br />
-                  dan <br />
-                  Ibu Sukatmi
-                </p>
+            </div>
+
+            <!-- firna dias -->
+
+            <!-- icons -->
+            <span class="heart"><i class="bi bi-heart-fill"></i></span>
+            <!-- Icons -->
+
+            <!-- bimo -->
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="img/bimo.jpg"
+                    alt="Bimo Anggit"
+                    class="img-responsive rounded-circle"
+                  />
+                </div>
+                <div class="col-8">
+                  <h3>Bimo Anngit Saputra</h3>
+                  <p>Jawa Tengah, 22 Januari 1997</p>
+                  <p>
+                    Putra ke 3 (bungsu) dari Bapak Ardiyono <br />
+                    dan <br />
+                    Ibu Sukatmi
+                  </p>
+                </div>
+                <!-- bimo -->
               </div>
-              <!-- bimo -->
             </div>
           </div>
         </div>
@@ -174,83 +230,85 @@
     <!-- INFO -->
     <section id="info" class="info">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <h2>Informasi Acara</h2>
-            <p class="alamat">
-              Alamat:<br />
-              BALITRI PAKUON <br />Jalan Raya Pakuwon No.Km. 2, Parungkuda,
-              Kec.Parungkuda, Kab.Sukabumi,Jawa Barat
-            </p>
+        <div class="scroll-animation">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-10 text-center">
+              <h2>Informasi Acara</h2>
+              <p class="alamat">
+                Alamat:<br />
+                BALITRI PAKUON <br />Jalan Raya Pakuwon No.Km. 2, Parungkuda,
+                Kec.Parungkuda, Kab.Sukabumi,Jawa Barat
+              </p>
 
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.384261589751!2d106.75255179999999!3d-6.844453199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68324e8d9056b1%3A0xbf3bc6a225504418!2sBalai%20Pengujian%20Standar%20Instrumen%20Tanaman%20Industri%20dan%20Penyegar!5e0!3m2!1sid!2sid!4v1734361942882!5m2!1sid!2sid"
-              width="100%"
-              height="250"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.384261589751!2d106.75255179999999!3d-6.844453199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68324e8d9056b1%3A0xbf3bc6a225504418!2sBalai%20Pengujian%20Standar%20Instrumen%20Tanaman%20Industri%20dan%20Penyegar!5e0!3m2!1sid!2sid!4v1734361942882!5m2!1sid!2sid"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
 
-            <a
-              href="https://maps.app.goo.gl/eDPqQ9VG9neyTXa47?g_st=aw"
-              target="_blank"
-              class="btn btn-light btn-sm my-3"
-              >klik untuk membuka peta</a
-            >
-            <p class="description">
-              Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di
-              tujuan namun tidak ada tanda-tanda sedang dilangsungkan
-              pernikahan, boleh jadi Anda salah jadwal atau salah tempat.
-            </p>
-          </div>
-        </div>
-
-        <div class="row justify-content-center mt-4">
-          <!-- AKAD -->
-          <div class="col-md-5 col-10">
-            <div class="card text-center text-bg-light mb-4">
-              <div class="card-header">Akad Nikah</div>
-              <div class="card-body">
-                <div class="row justify-content-center">
-                  <div class="col-md-6">
-                    <i class="bi bi-clock d-block"></i>
-                    <span>08.00 - 10.00</span>
-                  </div>
-                  <div class="col-md-6">
-                    <i class="bi bi-calendar3 d-block"></i>
-                    <span>Sabtu, 4 Januari 2025</span>
-                  </div>
-                </div>
-              </div>
-              <div class="card-footer">
-                Saat Acara diharapkan untuk kondusif menjaga kehikmatan dan
-                ke-khusyuan seluruh prosesi.
-              </div>
+              <a
+                href="https://maps.app.goo.gl/eDPqQ9VG9neyTXa47?g_st=aw"
+                target="_blank"
+                class="btn btn-light btn-sm my-3"
+                >klik untuk membuka peta</a
+              >
+              <p class="description">
+                Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba
+                di tujuan namun tidak ada tanda-tanda sedang dilangsungkan
+                pernikahan, boleh jadi Anda salah jadwal atau salah tempat.
+              </p>
             </div>
           </div>
-          <!-- AKAD -->
 
-          <!-- RESEPSI -->
-          <div class="col-md-5 col-10">
-            <div class="card text-center text-bg-light">
-              <div class="card-header">Resepsi</div>
-              <div class="card-body">
-                <div class="row justify-content-center">
-                  <div class="col-md-6">
-                    <i class="bi bi-clock d-block"></i>
-                    <span>11.00 - selesai</span>
-                  </div>
-                  <div class="col-md-6">
-                    <i class="bi bi-calendar3 d-block"></i>
-                    <span>Sabtu, 4 Januari 2025</span>
+          <div class="row justify-content-center mt-4">
+            <!-- AKAD -->
+            <div class="col-md-5 col-10">
+              <div class="card text-center text-bg-light mb-4">
+                <div class="card-header">Akad Nikah</div>
+                <div class="card-body">
+                  <div class="row justify-content-center">
+                    <div class="col-md-6">
+                      <i class="bi bi-clock d-block"></i>
+                      <span>08.00 - 10.00</span>
+                    </div>
+                    <div class="col-md-6">
+                      <i class="bi bi-calendar3 d-block"></i>
+                      <span>Sabtu, 4 Januari 2025</span>
+                    </div>
                   </div>
                 </div>
+                <div class="card-footer">
+                  Saat Acara diharapkan untuk kondusif menjaga kehikmatan dan
+                  ke-khusyuan seluruh prosesi.
+                </div>
               </div>
-              <div class="card-footer">
-                Saat Acara diharapkan untuk kondusif menjaga kehikmatan dan
-                ke-khusyuan seluruh prosesi.
+            </div>
+            <!-- AKAD -->
+
+            <!-- RESEPSI -->
+            <div class="col-md-5 col-10">
+              <div class="card text-center text-bg-light">
+                <div class="card-header">Resepsi</div>
+                <div class="card-body">
+                  <div class="row justify-content-center">
+                    <div class="col-md-6">
+                      <i class="bi bi-clock d-block"></i>
+                      <span>11.00 - selesai</span>
+                    </div>
+                    <div class="col-md-6">
+                      <i class="bi bi-calendar3 d-block"></i>
+                      <span>Sabtu, 4 Januari 2025</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  Saat Acara diharapkan untuk kondusif menjaga kehikmatan dan
+                  ke-khusyuan seluruh prosesi.
+                </div>
               </div>
             </div>
           </div>
@@ -263,80 +321,80 @@
     <!-- STORY -->
     <section id="story" class="story">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-10 text-center">
-            <span>Bagaimana Cinta Kami Bersemi</span>
-            <h2>Cerita Kami</h2>
-            <p>Kisah Kami</p>
+        <div class="scroll-animation">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-10 text-center">
+              <span>Bagaimana Cinta Kami Bersemi</span>
+              <h2>Cerita Kami</h2>
+              <p>Kisah Kami</p>
+            </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col">
-            <ul class="timeline">
-              <!-- panel1 -->
-              <li>
-                <div
-                  class="timeline-image"
-                  style="background-image: url(img/instagram.jpeg)"
-                ></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3>Pertama Kali Kenal</h3>
-                    <span>Tanggal</span>
+          <div class="row">
+            <div class="col">
+              <ul class="timeline">
+                <!-- panel1 -->
+                <li>
+                  <div
+                    class="timeline-image"
+                    style="background-image: url(img/instagram.jpeg)"
+                  ></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Pertama Kali Kenal</h3>
+                      <span>2022</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>
+                        kami mulai mengenal lewat sosial media yaitu Instagram
+                      </p>
+                    </div>
                   </div>
-                  <div class="timeline-body">
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Minima cum soluta esse neque exercitationem porro?
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <!-- panel1 -->
+                </li>
+                <!-- panel1 -->
 
-              <!-- panel2 -->
-              <li class="timeline-inverted">
-                <div
-                  class="timeline-image"
-                  style="background-image: url(img/prewed2.jpg)"
-                ></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3>Mulai Serius</h3>
-                    <span>Tanggal</span>
+                <!-- panel2 -->
+                <li class="timeline-inverted">
+                  <div
+                    class="timeline-image"
+                    style="background-image: url(img/prewed2.jpg)"
+                  ></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Mulai Serius</h3>
+                      <span>28 Januari 2024</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>kami merencanakan untuk melaksanakan pertunangan</p>
+                    </div>
                   </div>
-                  <div class="timeline-body">
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Minima cum soluta esse neque exercitationem porro?
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <!-- panel2 -->
+                </li>
+                <!-- panel2 -->
 
-              <!-- panel3 -->
-              <li class="timeline">
-                <div
-                  class="timeline-image"
-                  style="background-image: url(img/prewed.jpg)"
-                ></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3>Tunangan</h3>
-                    <span>Tanggal</span>
+                <!-- panel3 -->
+                <li class="timeline">
+                  <div
+                    class="timeline-image"
+                    style="background-image: url(img/prewed.jpg)"
+                  ></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Tunangan</h3>
+                      <span>05 agustus 2024</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p>
+                        kami di pertemukan untuk pertama kali nya dalam suau
+                        pertemuan keluarga dimana untuk mengikat suatu hubungan
+                        yang kami jalani untuk menuju kejenjang yang lebih
+                        serius
+                      </p>
+                    </div>
                   </div>
-                  <div class="timeline-body">
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Minima cum soluta esse neque exercitationem porro?
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <!-- panel3 -->
-            </ul>
+                </li>
+                <!-- panel3 -->
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -350,10 +408,7 @@
           <div class="col-md-8 col-10 text-center">
             <span>Memori Kisah Kami</span>
             <h2>Galeri Foto</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
-              accusantium mollitia voluptate id pariatur consequuntur.
-            </p>
+            <p></p>
           </div>
         </div>
 
@@ -410,7 +465,7 @@
               data-gallery="mygalerry"
             >
               <img
-                src="img/gallery/timenail/couple2.jpg"
+                src="img/gallery/timenail/p.jpg"
                 alt="Firna & Bimo 4"
                 class="img-fluid w-100 rounded"
               />
@@ -418,28 +473,28 @@
           </div>
           <div class="col mt-3">
             <a
-              href="img/gallery/couple.jpg"
+              href="img/gallery/3.jpg"
               data-toggle="lightbox"
               data-caption="Firna & Bimo 5"
               data-gallery="mygalerry"
             >
               <img
-                src="img/gallery/timenail/couple1.jpg"
+                src="img/gallery/timenail/3.jpg"
                 alt="Firna & Bimo 5"
                 class="img-fluid w-100 rounded"
               />
             </a>
           </div>
-          <div
-            class="col mt-3"
-            data-toggle="lightbox"
-            data-caption="Firna & Bimo 6"
-            data-gallery="mygalerry"
-          >
-            <a href="img/gallery/couple.jpg">
+          <div class="col mt-3">
+            <a
+              href="img/gallery/4.jpg"
+              data-toggle="lightbox"
+              data-caption="Firna & Bimo 5"
+              data-gallery="mygalerry"
+            >
               <img
-                src="img/gallery/timenail/couple1.jpg"
-                alt="Firna & Bimo 6"
+                src="img/gallery/timenail/4.jpg"
+                alt="Firna & Bimo 5"
                 class="img-fluid w-100 rounded"
               />
             </a>
@@ -560,15 +615,15 @@
                 <div class="fw-bold">MANDIRI</div>
                 1850002958509 - BIMO ANGGIT SAPUTRO
               </li>
-              <li class="list-group-item">
-                <div class="fw-bold">DANA</div>
+              <!-- <li class="list-group-item">
+                <div class="fw-bold">MANDIRI</div>
                 <img
                   src="img/DANA.jpg"
                   alt="DANA QR"
                   class="img-thumbnail"
                   width="150"
                 />
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -614,7 +669,10 @@
     <!-- MUSIK -->
     <div id="audio-container">
       <audio id="song" autoplay loop>
-        <source src="audio/the love.mp3" type="audio/mp3" />
+        <source
+          src="audio/tiara-andini-arsy-widianto-lagu-pernikahan-kita-official-music-video-128-ytshorts.savetube.me.mp3"
+          type="audio/mp3"
+        />
       </audio>
 
       <div class="audio-icon-wrapper" style="display: none">
@@ -628,6 +686,22 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".scroll-animation"); // Ambil semua elemen dengan kelas ini
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible"); // Tambahkan kelas "visible" jika elemen terlihat
+            }
+          });
+        });
+
+        elements.forEach((el) => observer.observe(el)); // Daftarkan setiap elemen untuk diamati
+      });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
