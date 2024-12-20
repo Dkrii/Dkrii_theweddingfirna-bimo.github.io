@@ -103,7 +103,6 @@ body {
   font-family: "sacramento";
   font-size: 5rem;
   font-weight: bold;
- 
 }
 
 /*
@@ -122,7 +121,6 @@ body {
   color: grey;
   font-weight: lighter;
 }
-
 
 .home .couple {
   margin-top: 20px;
@@ -143,7 +141,7 @@ body {
   width: 100%;
   color: grey;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 2px 2px 4px rgba(0, 0, 0, 0.5),
-  -1px -1px 2px rgba(0, 0, 0, 0.5);
+    -1px -1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .home .heart {
@@ -161,6 +159,19 @@ body {
 .home .heart i {
   margin: auto;
   color: var(--pink);
+}
+
+/* Awal kondisi elemen: Tersembunyi */
+.scroll-animation {
+  opacity: 0; /* Tidak terlihat */
+  transform: translateY(20px); /* Bergeser ke bawah */
+  transition: opacity 1s ease, transform 1s ease; /* Animasi smooth */
+}
+
+/* Kondisi elemen saat terlihat */
+.scroll-animation.visible {
+  opacity: 1; /* Terlihat */
+  transform: translateY(0); /* Kembali ke posisi semula */
 }
 
 .info {
@@ -203,11 +214,10 @@ body {
   border-bottom: 1px solid #999;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
- 
 }
 
 .info .card-body {
- color: grey; 
+  color: grey;
   font-size: 1rem;
 }
 
@@ -216,7 +226,6 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
   color: grey;
-  
 }
 
 .story,
@@ -226,7 +235,6 @@ body {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
-
 
 .story {
   background-image: url(img/canva.png);
@@ -271,7 +279,7 @@ body {
 }
 
 .timeline li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
   position: relative;
 }
 
@@ -297,7 +305,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 2px 2px 4px rgba(0, 0, 0, 0.5),
-  -1px -1px 2px rgba(0, 0, 0, 0.5);
+    -1px -1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .timeline li .timeline-panel {
@@ -392,8 +400,6 @@ body {
   background-image: url(img/canva.png);
   background-position: center;
   background-size: cover;
-
-
 }
 
 .gifts span {
@@ -483,7 +489,7 @@ footer li {
     top: 16px;
   }
   .timeline li .timeline-panel {
-    width: calc((100%-200px));
+    width: calc(100% - 200px);
     float: right;
   }
   .timeline li .timeline-panel::before {
@@ -506,20 +512,49 @@ footer li {
     font-size: 65%;
   }
   .simply-countdown > .simply-section {
+    width: 40px; /* Reduce size for smaller screens */
+    height: 40px;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 10%; /* Adjust border-radius */
+  }
+
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 1.2rem; /* Smaller font size */
+  }
+
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 0.8rem; /* Adjust word size */
+  }
+}
+
+/* .simply-countdown > .simply-section {
     padding: 40px;
     margin: 10px;
-  }
-  .mynavbar .nav-link {
+  } */
+
+.offcanvas {
+  max-width: 80%; /* Sesuaikan ukuran offcanvas di layar kecil */
+}
+
+.offcanvas-header h5 {
+  font-size: 1.2rem; /* Sesuaikan ukuran teks header */
+}
+
+.offcanvas-body .nav-link {
+  font-size: 1.5rem; /* Sesuaikan ukuran teks pada link */
+}
+
+/* .mynavbar .nav-link {
     font-size: 2rem;
     text-align: center;
-  }
-  .timeline li .timeline-image {
-    width: 140px;
-    height: 140px;
-  }
-  .sticky-top {
-    overflow: hidden;
-  }
+  } */
+.timeline li .timeline-image {
+  width: 140px;
+  height: 140px;
+}
+.sticky-top {
+  overflow: hidden;
 }
 
 /* mobile phone */
@@ -528,10 +563,30 @@ footer li {
     font-size: 60%;
   }
 
+  .simply-countdown {
+    display: flex; /* Switch to flexbox for better alignment */
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap sections to the next row if needed */
+  }
+
   .simply-countdown > .simply-section {
+    width: 30px; /* Further reduce size for very small screens */
+    height: 30px;
+    padding: 30px;
+    margin: 8px;
+  }
+
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 1rem; /* Further reduce font size */
+  }
+
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 0.7rem; /* Further reduce word size */
+  }
+  /* .simply-countdown > .simply-section {
     padding: 45px;
     margin: 3px;
-  }
+  } */
   .timeline li .timeline-image {
     width: 80px;
     height: 80px;
