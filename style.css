@@ -123,7 +123,11 @@ body {
 }
 
 .home .couple {
-  margin-top: 20px;
+  margin-top: 50px;
+}
+
+.home .couple .col-lg-6 {
+  margin-bottom: 100px;
 }
 
 .home .couple h3 {
